@@ -9,7 +9,7 @@ This will be accomplished by tracking your progess in Starsector.
 option = raw_input("Please enter a keyword to view the directory: 'colony' 'explorer' 'fleet' 'enemies' 'other': ")
 
 if option == 'colony':
-  coption = raw_input("Please select desired colony information: 'revenue' 'structures' 'AI cores' 'system' or 'administrator': ")
+  coption = raw_input("Please select colony information: 'revenue' 'structures' 'AI cores' 'system' or 'administrator': ")
   if coption == 'revenue':
     print """
     Revenue per month is as follows:
@@ -69,9 +69,24 @@ if option == 'colony':
     else:
       print "Resistance is futile"
   elif coption == 'system':
-    print 
+    print """ 
+    Star Systems:
+    
+    Atahsaya: Kohanie & Sniadania
+    Epsilon Pera-Tartari: Kapusta & Pierogi
+    Nova Cydonia: Zaba & Kielbasa
+    Askonia: Homar & Lew """
   elif coption == 'administrator':
-    print 
+    print """ Colony Administrators:
+
+    Kohanie: Alfha Cohr
+    Sniadania: Alfha Cohr
+    Kapusta: Alfha Cohr
+    Pierogi: Alfha Cohr
+    Zaba: Alfha Cohr
+    Kielbasa: Alfha Cohr
+    Homar: Alfha Cohr
+    Lew: Alfha Cohr"""
   else:
     print """............................................
     I\'m sorry Charlie, you know I can\'t do that.
@@ -80,6 +95,27 @@ elif option == 'explorer':
   print """
   Beta Hadreel: Domain Cryosleeper/Possible Mining colony
   """
+elif option == 'fleet':
+  print "stuff"
+  #maybe list the capital-class ships?
+elif option == 'enemies':
+  whom = raw_input("Please indicate which faction draws your ire, current options include: Luddic Path & Pirates. ")
+  if whom == 'Pirates':
+      print """ 
+      Pirate system(s) include: 
+      
+      """
+  elif whom == 'Luddic Path':
+    print """Luddic Path system(s) include: 
+    """
+  else:
+    print """This list does not contain that, please help by EXPANDING IT;
+     
+     BLOOD FOR THE BLOOD GOD,
+     
+     SKULLS FOR THE SKULL THRONE,
+     
+     MILK FOR THE KHORNE FLAKES"""
 elif option == 'other':
   print """
   I\'m not sure what to put here yet.
