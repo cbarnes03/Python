@@ -1,0 +1,128 @@
+print """Hello Future Charlie, I hope you\'re doing well!
+The following is a possible method to make sure your gaming
+is actually a link towards your productivity. 
+
+This will be accomplished by tracking your progess in Starsector.
+
+"""
+
+option = raw_input("Please enter a keyword to view the directory: 'colony' 'explorer' 'fleet' 'enemies' 'other': ")
+
+if option == 'colony':
+  coption = raw_input("Please select colony information: 'revenue' 'structures' 'AI cores' 'system' or 'administrator': ")
+  if coption == 'revenue':
+    print """
+    Revenue per month is as follows:
+
+    Kohanie: 167,902
+    Sniadania: 178,104
+    Kapusta: 102,422
+    Pierogi: 251,259
+    Zaba: 85,103
+    Kielbasa: 62,266
+    Homar: 79,938
+    Lew: 44,072 """
+  elif coption == 'structures':
+    print """ 
+    In order to make it easier to type out, the abbreviations for each industry are as follows: Population & Infrastructure(PI) Spaceport(SP) Megaport(MP) Waystation(WS) Farming(F) Aquaculture(AC) Mining(M) Tech-Mining(TM) Refining(R) Light Industry(LI) Heavy Industry(HI) Orbital Works(OW) Fuel Production(FP) Commerce(C) Ground Defences(GD) Heavy Batteries(HB) Patrol HQ(PHQ) Military Base(MB) High Command(HC) Star Fortress(SF)Planetary Shield (PS) Colonies:
+    
+    Kohanie: PI MP WS F OW C SF HB HC PS
+    Sniadania: PI MP WS M OW FP C SF HB PHQ PS
+    Kapusta: PI MP WS AC LI C SF HB HC PS
+    Pierogi: PI MP WS M R FP C SF HB PHQ PS
+    Zaba: PI MP WS F TM C SF HB HC
+    Kielbasa: PI MP WS TM FP C SF HB HC
+    Homar: PI MP WS A M TM SF HB PHQ
+    Lew: PI MP WS M TM SF HB HC
+    """ 
+    # list colony name followed by which industries they have, maybe have an option for total list or a selection by industry
+  elif coption == 'AI cores':
+    type = raw_input("Please select what type of core you are looking for, alpha, beta, or gamma. ")
+    if type == 'alpha':
+      print """ Colonies with alpha cores include:
+      Kohanie: 5
+      Sniadania: 1
+      Kapusta: 3
+      Pierogi: 4
+      Zaba: 3
+      Kielbasa: 2
+      Homar: 2
+      Lew: 2"""
+      #list colony name followed by number of alpha cores used
+    elif type == 'beta':
+      print """ Colonies with beta cores include:
+
+      Kohanie: 5
+      Sniadania: 10
+      Kapusta: 7
+      Pierogi: 7
+      Zaba: 6
+      Kielbasa: 7
+      Homar: 6
+      Lew: 5 """
+      #list colony name followed by number of beta cores used
+    elif type == 'gamma':
+      print """ 
+      
+      Are you kidding me? What kind of backwoods operation 
+      do you think I am running here?"""
+    else:
+      print "Resistance is futile"
+  elif coption == 'system':
+    print """ 
+    Star Systems:
+    
+    Atahsaya: Kohanie & Sniadania
+    Epsilon Pera-Tartari: Kapusta & Pierogi
+    Nova Cydonia: Zaba & Kielbasa
+    Askonia: Homar & Lew """
+  elif coption == 'administrator':
+    print """ Colony Administrators:
+
+    Kohanie: Alfha Cohr
+    Sniadania: Alfha Cohr
+    Kapusta: Alfha Cohr
+    Pierogi: Alfha Cohr
+    Zaba: Alfha Cohr
+    Kielbasa: Alfha Cohr
+    Homar: Alfha Cohr
+    Lew: Alfha Cohr"""
+  else:
+    print """............................................
+    I\'m sorry Charlie, you know I can\'t do that.
+    .............................................."""
+elif option == 'explorer':
+  print """
+  Beta Hadreel: Domain Cryosleeper/Possible Mining colony
+  """
+elif option == 'fleet':
+  print "stuff"
+  #maybe list the capital-class ships?
+elif option == 'enemies':
+  whom = raw_input("Please indicate which faction draws your ire, current options include: Luddic Path & Pirates. ")
+  if whom == 'Pirates':
+      print """ 
+      Pirate system(s) include: 
+      
+      """
+  elif whom == 'Luddic Path':
+    print """Luddic Path system(s) include: 
+    """
+  else:
+    print """This list does not contain that, please help by EXPANDING IT;
+     
+     BLOOD FOR THE BLOOD GOD,
+     
+     SKULLS FOR THE SKULL THRONE,
+     
+     MILK FOR THE KHORNE FLAKES"""
+elif option == 'other':
+  print """
+  I\'m not sure what to put here yet.
+  """
+else:
+  print """...................................
+  ..............................................
+  I\'m sorry Charlie, you know I can\'t do that.
+  ...............................................
+  .............................................."""
