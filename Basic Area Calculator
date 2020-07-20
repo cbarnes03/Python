@@ -1,0 +1,34 @@
+print """ This program is made to 
+calculate the area of a shape 
+(currently only circles or triangles)
+input by the user."""
+
+print "...Cacluator initializing..."
+
+option = raw_input("""Please input either 
+C to calculate the area of a circle 
+or T to calculate the area of a triangle: """)
+
+
+if option == 'C':
+  radius = float(raw_input("""Excellent! Please enter the radius 
+  in inches: """))
+  area = 3.14159 * (radius ** 2)
+  print ("The area of your circle is: %f") % area
+
+elif option == 'T':
+  base = float(raw_input("""Wonderful! Please enter the length
+  of the base of your triangle in inches: """))
+  height = float(raw_input("""Please enter the height of 
+  your triangle in inches: """))
+  area = 0.5 * base * height
+  print ("The area of your triangle is: %f") % area
+
+else: 
+  print """.....................................
+  ..............................................
+  I\'m sorry Dave, I\'m afraid I can\'t do that.....
+  ..................................................
+  .................................................."""
+
+print "The program is now exiting. Resistance is futile: "
