@@ -94,6 +94,7 @@ if option == 'colony':
 elif option == 'explorer':
   print """
   Beta Hadreel: Domain Cryosleeper/Possible Mining colony
+  Alpha Basan: Domain Cryosleeper/Possible Actual colony
   """
 elif option == 'fleet':
   print "stuff"
